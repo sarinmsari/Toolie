@@ -35,7 +35,7 @@ const clear = () => {
 </script>
 
 <template>
-  <div class="p-4 flex flex-col h-full space-y-4">
+  <div class="flex flex-col h-full space-y-4">
     <div class="flex justify-between items-center">
       <h2 class="text-sm font-bold text-slate-500 uppercase tracking-tight">Case Converter</h2>
       <button @click="clear" class="text-xs text-red-500 hover:underline">Clear</button>

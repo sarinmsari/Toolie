@@ -21,9 +21,17 @@ import { computed } from 'vue';
 const props = defineProps(['id']); // Receives the category ID from URL
 
 const allTools = [
-  { name: 'JSON Formatter', path: '/tool/json', category: 'dev' },
-  { name: 'Base64 Encoder', path: '/tool/base64', category: 'text' },
+  //text
+  { name: 'Base64 Converter', path: '/tool/base64', category: 'text' },
+  { name: 'Character & Word Counter', path: '/tool/word-counter', category: 'text' },
   { name: 'Case Converter', path: '/tool/case-converter', category: 'text' },
+  { name: 'Lorem Ipsum Generator', path: '/tool/lorem-ipsum', category: 'text' },
+  //dev
+  { name: 'JSON Formatter', path: '/tool/json-formatter', category: 'dev' },
+  { name: 'Color Converter', path: '/tool/color-converter', category: 'dev' },
+  //math
+  { name: 'Percentage Calculator', path: '/tool/percentage-calculator', category: 'math'},
+  { name: 'Unit Converter', path: '/tool/unit-converter', category: 'math'},
 ];
 
 const filteredTools = computed(() => {
